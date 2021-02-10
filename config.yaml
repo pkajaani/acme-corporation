@@ -21,6 +21,10 @@ menu:
       name: Contact
       url: /contact
       weight: 2
+    - identifier: privacy
+      name: Privacy policy
+      url: /privacy
+      weight: 2
 
 params:
   color: "#71B180"
@@ -36,3 +40,11 @@ params:
       recentCount: 7
     - title: Contact Us
       contact: true
+
+markup:                                 # Settings for markup
+  goldmark:                             # The default Hugo Markdown engine
+    renderer:                           # Settings for markdown rendering
+      unsafe: true                      # Enable 'unsafe' inline HTML
+  highlight:                            # Options for code highlighting
+    lineNos: true                       # Enable line numbers
+enableEmoji: true                       # Enable emoticons
