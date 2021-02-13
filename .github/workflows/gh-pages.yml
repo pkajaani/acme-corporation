@@ -20,8 +20,16 @@ jobs:
           hugo-version: 'latest'
           extended: true
 
-      - name: Build
-        run: hugo --minify --baseURL=https://myacmecorporation.github.io/GitHubPages
+      #Insert a cache step before site-building as follows. Note that the cache dir location of Hugo on a Linux-based operating system is /tmp/hugo_cache. On macOS, ${TMPDIR}/hugo_cache has the location.
+      # - uses: actions/cache@v2
+      #   with:
+      #     path: /tmp/hugo_cache
+      #     key: ${{ runner.os }}-hugomod-${{ hashFiles('**/go.sum') }}
+      #     restore-keys: |
+      #       ${{ runner.os }}-hugomod-
+
+      - name: Deploy
+        run: hugo --minify
 
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
