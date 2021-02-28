@@ -4,8 +4,6 @@ menu:
     name: Terms of Use
     weight: 2
 ---
-
-
 Terms of Use
 ============
 ## Terms

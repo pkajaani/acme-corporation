@@ -5,8 +5,6 @@ description: World's leading manufacturer of digital shapes. We shape the world.
 draft: false
 ---
 
-{{< reuse.inline >}}Inline Reused **content**{{< /reuse.inline >}}
-
 Acme Corporation&trade; is the world's leading manufacturer of digital shapes. From squares and circles to triangles and hexagons, we have it all. Browse through our collection of various forms with different thickness and line styles.
 
 {{<divider>}}
@@ -14,8 +12,6 @@ Acme Corporation&trade; is the world's leading manufacturer of digital shapes. F
 > We shape the world. You live in it.
 
 {{<divider>}}
-
-{{< reuse.inline />}}
 
 We provide :smile: to hundreds of happy customers.
 
@@ -38,21 +34,19 @@ At Acme Corporation, we take pride in what we create. Our manufacturing process 
 2. **Rasterizing** Ous raster engine is world class and keeps the vector right until it gets to our high quality laser printers.
 3. **Delivery** Our output is hosted on the fastest of CDN with a 99.99% uptime and the bandwidth that can take care of all your load.
 
+{{<divider>}}
+
 Products
 ---------
 
 {{% productInfo %}}
-
-
-{{% reuse.inline %}}
-
 
 Team
 -----
 
 Alex
 : Hippy Web Developer
-: Technofile
+: Technophile
 
 Bob
 : Classic SysAdmin
@@ -62,3 +56,9 @@ Gabby
 : Cool Content Master
 : Cautious
 
+Our Values
+-----------
+{{< repeat 5>}}
+Customer is our *number 1* priority.
+{{< / repeat>}}
+Nothing else.
