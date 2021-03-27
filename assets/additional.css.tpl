@@ -136,6 +136,7 @@ section {
 
 .terms section main summary h3:before {
   content: ' ';
+
   border: solid {{site.Param "color"}};
   border-width: 0 2px 2px 0;
   display: inline-block;
@@ -197,6 +198,7 @@ section {
 }
 
 @media only screen and (min-width: 1200px) {
+
   main,
   article {
     margin: 40px;

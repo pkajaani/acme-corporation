@@ -52,6 +52,7 @@ header nav li ul {
 
 header nav li:hover ul {
   display: block;
+
 }
 
 section:first-child {
@@ -188,6 +189,7 @@ details summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width : 320px) {
+
   main,
   article {
     margin: 0 10px 0 10px;
@@ -199,6 +201,7 @@ details summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width : 480px) {
+
   main,
   article {
     margin: 0 30px 0 30px;
@@ -215,6 +218,7 @@ details summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width : 768px) {
+
   main,
   article {
     margin: 0 40px 0 40px;
@@ -230,6 +234,7 @@ details summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width : 992px) {
+
   main,
   article,
   header {
@@ -242,6 +247,7 @@ details summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width : 1200px) {
+
   main,
   article,
   header {
