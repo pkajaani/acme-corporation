@@ -16,4 +16,5 @@ hugo.linux
 !.vscode/extensions.json
 
 ### Hugo themes ###
-#/themes/
+/themes/Meghna/
+/themes/Universal/

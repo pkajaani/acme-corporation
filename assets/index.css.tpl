@@ -2,7 +2,8 @@ body {
   margin: 0;
   padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  background-image: url(image/background-gas.jpg);
+  {{ $background := resources.GetMatch "image/background.svg.tpl" | resources.ExecuteAsTemplate "background.svg" . }}
+  background-image: url({{$background.Permalink}});
   background-size: cover;
 }
 
@@ -51,7 +52,6 @@ header nav li ul {
 
 header nav li:hover ul {
   display: block;
-
 }
 
 section:first-child {
@@ -123,7 +123,7 @@ h1 {
 }
 
 a {
-  color: #71B180;
+  color: {{site.Param "color"}};
   text-decoration: none;
   padding: 10px;
   white-space: nowrap;
@@ -150,7 +150,7 @@ a:hover {
   margin: 15px;
   box-sizing: border-box;
   padding: 10px;
-  border: 1px solid #71B180;
+  border: 1px solid {{site.Param "color"}};
   display: inline-block;
 }
 
@@ -171,7 +171,7 @@ thead td {
 details summary {
   display: block;
   cursor: pointer;
-  color: #71B180;
+  color: {{site.Param "color"}};
 }
 
 details summary::-webkit-details-marker {
@@ -188,7 +188,6 @@ details summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width : 320px) {
-
   main,
   article {
     margin: 0 10px 0 10px;
@@ -200,7 +199,6 @@ details summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width : 480px) {
-
   main,
   article {
     margin: 0 30px 0 30px;
@@ -217,7 +215,6 @@ details summary::-webkit-details-marker {
 }
 
 @media only screen and (min-width : 768px) {
-
   main,
   article {
     margin: 0 40px 0 40px;
@@ -229,12 +226,10 @@ details summary::-webkit-details-marker {
 
   .post {
     width: calc(50% - 30px);
-    margin: 15px;
-  }
+    margin: 15px;  }
 }
 
 @media only screen and (min-width : 992px) {
-
   main,
   article,
   header {
@@ -243,12 +238,10 @@ details summary::-webkit-details-marker {
 
   .post {
     width: calc(33% - 30px);
-    margin: 15px;
-  }
+    margin: 15px;  }
 }
 
 @media only screen and (min-width : 1200px) {
-
   main,
   article,
   header {
